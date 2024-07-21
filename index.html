@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<link rel="stylesheet" href="./css/fontawesome.min.css">
+			<link rel="stylesheet" href="./css/all.min.css">
+			<link rel="stylesheet" href="./css/style.css">
+			<script src="script.js"></script>
+			<meta name="viewport" content="width=device-width,initial-scale=1">
+		</head>
+		<body>
+			<form class="form">
+				<h1>SignUp</h1>
+				<table class="form-layout">
+					<tr>
+						<td><label for="name">Username</label>
+						    <span id="correct-name"></span></td>
+					</tr>
+					<tr>
+						<td><input type="text" name="username" id="name" placeholder="xyz" onblur="errormsg('name-error')" onkeyup="validate('name-error')"/></td>
+					</tr>
+					<tr>
+						<td><span id="name-error"></span></td>
+					</tr>
+					<tr>
+						<td><label for="mail">Email</label>
+							<span id="correct-email"></span></td>
+					</tr>
+					<tr>
+						<td><input type="email" name="mail" id="mail" placeholder="abc@gmail.com" onblur="errormsg('mail-error')" onkeyup="validate('mail-error')"/></td>
+					</tr>
+					<tr>
+						<td><span id="mail-error"></span></td>
+					</tr>
+					<tr>
+						<td><label for="password">Password</label>
+						    <span id="correct-password"></span></td>
+					</tr>
+					<tr>
+						<td><input type="password" name="password" id="password" placeholder="password" onblur="errormsg('password-error')" onkeyup="validate('password-error')"/></td>
+					</tr>
+					<tr>
+						<td><span id="password-error"></span></td>
+					</tr>
+					<tr>
+						<td><label for="finalpassword">Confirm Password</label>
+							 <span id="matched-pw"></span></td>
+					</tr>
+					<tr>
+						<td><input type="password" name="password" id="finalpassword" placeholder="password" onblur="errormsg('ConfirmPassword-error')" onkeyup="validate('ConfirmPassword-error')"/></td>
+					</tr>
+					<tr>
+						<td><span id="ConfirmPassword-error"></span></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" value="I agree to terms and conditions" name="agreement" onkeyup="validate('agreement-error')">I agree to terms and conditions</td>
+					</tr>
+					<tr>
+						<td><span id="submit-error"></span></td>
+					</tr>
+					<tr>
+						<td><input type="submit" value="Submit" name="submit" id="submit" onclick="finalcheck(event)"/></td>
+					</tr>
+				</table>
+			</form>
+		</body>
+	</html>

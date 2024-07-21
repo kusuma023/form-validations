@@ -1,0 +1,59 @@
+				*{
+					box-sizing:border-box;
+					margin:0;
+				}
+				span{
+					color:red;
+				}
+				table tr{
+					position:relative;
+				}
+				.form{
+					position:relative;
+				}
+				.form-layout{
+					position: absolute;
+					left: 35%;
+					top: 63px;
+					padding: 2%;
+					border-radius: 5%;
+					width:25%;
+					border: 2px solid blue;
+					padding-top: 4%;
+					font-size:20px;
+				}
+				.form h1{
+					text-align:center;
+					color:blue;
+					position:absolute;
+					left: 42%;
+					top: 70px;
+					text-decoration: underline;
+				}
+				span i{
+					color: #5bcb5b;
+					display:none;
+				}
+				tr td input:focus{
+					outline:none;
+				}
+				tr td{
+					padding:1%;
+				}
+				#submit{
+					position: absolute;
+					left: 25%;
+					color:blue;
+				}
+				@media(min-width:300px)and (max-width:500px){
+					.form-layout{
+						width: 77%;
+						left: 11%;
+						font-size: 20px;
+						padding: 14% 10% 10% 10%;
+					}
+					.form h1{
+						font-size: 28px;
+						left: 35%;
+					}
+				}
